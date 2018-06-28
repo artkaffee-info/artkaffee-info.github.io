@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/sidenav.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+<body>
+<!-- video -->
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+      <source src="About.mp4" type="video/mp4">
+    </video>
+</div>
+<!-- video -->
+<!-- nav -->
+<div class="menu">
+  <div class="line"></div>
+  <nav>
+    <ul>
+      <li><a target="_parent" href="index.html">HOME</a></li>
+      <li><a target="_parent" href="about.html">ABOUT</a></li>
+      <li><a target="_parent" href="reel.html">REEL</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- nav -->
+<!-- text -->
+<div class="centertext">
+  <p>This is the place where <span>Design</span> happens. To design is to challenge the status quo. To <span>Dream</span> about what could be, or what should be. It’s about solving problems that change the way humans think, act and move. Design is about making things good and right for the people who use and encounter them. <span>Art Kaffee</span> does a variety of consumer products ranging from websites to motion graphics. We share our <span>Art</span> through social media. We translate your <span>Ideas</span> into reality and help your <span>Business</span>  to grow.  Contact us to learn <span>More</span></p>
+</div>
+<!-- text -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+ $('.menu').click(function(){
+  $this = $(this);
+  if ($this.hasClass('active')) {
+    $this.removeClass('active');
+  }
+  else {
+    $this.addClass('active');    
+  }
+});
+</script>
+</body>
+</html>

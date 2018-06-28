@@ -1,0 +1,108 @@
+
+
+.menu {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  font-weight: 100;
+ font-family: 'Actor', sans-serif;
+/*padding-left: 1%*/
+ /* background: rgba(0,0,0, 0.65);*/
+  transition: all 250ms ease-in-out;
+  z-index: 100;
+  overflow: hidden;
+  /**/ 
+}
+.menu nav {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0;
+  -moz-transition: all 250ms linear 250ms;
+  -o-transition: all 250ms linear 250ms;
+  -webkit-transition: all 250ms linear;
+  -webkit-transition-delay: 250ms;
+  transition: all 250ms linear 250ms;
+  pointer-events: none;
+  z-index: 100;
+}
+.menu nav ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+.menu nav ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+.menu nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+.menu .line {
+  height: 3px;
+  width: 50px;
+  background: #fff;
+  position: absolute;
+  top: 22.5px;
+  left: 5px;
+  transition: all 250ms linear;
+}
+.menu .line:after, .menu .line:before {
+  content: ' ';
+  height: 3px;
+  width: 50px;
+  background: #fff;
+  position: absolute;
+  transition: all 250ms linear;
+}
+.menu .line:before {
+  top: -10px;
+}
+.menu .line:after {
+  bottom: -10px;
+}
+.menu.active {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.85);
+}
+.menu.active nav {
+  opacity: 1;
+  pointer-events: all;
+  /*background: rgba(0,0,0, 0.65);*/
+}
+.menu.active .line {
+  background: transparent;
+}
+.menu.active .line:before {
+  background: #fff;
+  -webkit-transform: rotate(-405deg);
+  transform: rotate(-405deg);
+  top: 0px;
+}
+.menu.active .line:after {
+  background: #fff;
+  -webkit-transform: rotate(405deg);
+  transform: rotate(405deg);
+  bottom: 0px;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 700px;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+/*video*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background: #000;
+
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+   
+}
+/*video*/
+body {
+  font-family: 'Abel', sans-serif;
+  font-size: 28px;
+  /*background-color: #f2cc3d;*/
+}
+.centertext {
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: 0px;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+}
+.centertext span {
+	color: rgba(228,69,69,0.7);
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+ 
